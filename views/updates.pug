@@ -1,0 +1,23 @@
+doctype html
+html 
+head 
+    title= `${title}`
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="/css/style.css")
+body    
+    h1 Create a New Car
+    form(action="/update-cobj" method="POST")
+        label(for="plate") Plate Number:
+        input(type="text" name="plate" required)
+        br
+        label(for="name") Name:
+        input(type="text" name="name" required)
+        br
+        label(for="color") Exterior Color:
+        input(type="text" name="color")
+        br
+        hr
+        br
+        button(type="submit") Create New Car
+    br
+    a(href="/") Return to the homepage
